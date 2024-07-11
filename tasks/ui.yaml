@@ -1,0 +1,8 @@
+version: "3"
+
+tasks:
+  default:
+    - task: compile
+
+  compile:
+    - task: pyuic5.exe -o src\segmenter_ui.py .\resources\segmenter.ui

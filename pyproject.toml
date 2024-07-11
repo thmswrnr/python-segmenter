@@ -1,0 +1,29 @@
+[project]
+name = "segmenter"
+description = ""
+version = "0.0.1"
+authors = [
+    { name = "Thomas Werner", email = "el.whappo@gmail.com" }
+]
+readme = "README.md"
+requires-python = "~=3.12.4"
+
+dependencies = [
+    "pyqt5",
+    "opencv-python",
+]
+
+[project.optional-dependencies]
+development = [
+    "ruff",
+    "mypy",
+    "pre-commit"
+]
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+line-length = 120
+select = ["E", "F", "W", "Q", "UP", "I", "N"]
+ignore = ["N802"]
